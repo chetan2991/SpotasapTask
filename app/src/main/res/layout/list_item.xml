@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.ListItem.ContainerStyle"
+    android:orientation="horizontal"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/list_row_image"
+        style="@style/Widget.ListItem.ImageStyle" />
+
+    <LinearLayout
+        style="@style/Widget.ListItem.TextContainerStyle"
+        android:layout_toRightOf="@+id/list_row_image">
+
+        <TextView
+            android:id="@android:id/title"
+            style="@style/Widget.ListItem.PrimaryStyle"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/clockicon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/image" />
+
+            <TextView
+                android:id="@android:id/text1"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="true"
+                style="@style/Widget.ListItem.ThirdStyle"
+                android:layout_toRightOf="@+id/clockicon"
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@android:id/text2"
+            style="@style/Widget.ListItem.ThirdStyle" />
+    </LinearLayout>
+
+</RelativeLayout>

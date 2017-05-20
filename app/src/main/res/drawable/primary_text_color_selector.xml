@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Checked - Not Supported -->
+    <item android:color="@color/generic_textview_list_item_primary_grayed_color" android:state_selected="true" />
+
+    <!-- Not Checked - Supported -->
+    <item android:color="@color/generic_textview_list_item_primary_color" android:state_selected="false" />
+
+</selector>
